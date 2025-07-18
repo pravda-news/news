@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости | Правда.ру | Главные новости дня</title>
+    <meta name="description" content="Последние новости, комментарии и статьи от Правда.ру">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="color-scheme" content="light">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="date-time">
+                        <span id="current-date"></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <h1>Правда.ру</h1>
+                        <span>новости</span>
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="../index.html" class="active">Главная</a></li>
+                            <li><a href="../pages/politika.html">Политика</a></li>
+                            <li><a href="../pages/mir.html">Мир</a></li>
+                            <li><a href="../pages/sport.html">Спорт</a></li>
+                            <li><a href="../pages/kultura.html">Культура</a></li>
+                            <li><a href="../pages/tehnologii.html">Технологии</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="header-actions">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <!-- <button class="menu-btn"><i class="fas fa-bars"></i></button> -->
+                        <button class="subscribe-btn">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breaking News Banner -->
+    <div class="breaking-news">
+        <div class="container">
+            <div class="breaking-news-content">
+                <span class="breaking-label">Срочные новости</span>
+                <div class="breaking-text">
+                    <span>Правительство объявило о новых мерах поддержки экономики</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-main">
+                    <article class="hero-article" onclick="window.location.href='articles/zdravoohranenie-reforma.html';" style="cursor: pointer;">
+                        <div class="hero-image">
+                            <img src="../images/stock/Starmer PMQs.avif" alt="Премьер-министр на заседании">
+                        </div>
+                        <div class="hero-content">
+                            <div class="article-meta">
+                                <span class="category">Политика</span>
+                                <span class="date full-updated-date">1</span>
+                            </div>
+                            <h2 class="hero-title">Премьер-министр объявил о крупных реформах в системе здравоохранения</h2>
+                            <p class="hero-excerpt">Новые меры направлены на улучшение качества медицинских услуг и сокращение времени ожидания пациентов...</p>
+                            <div class="article-author">
+                                <span>Автор: Анна Петрова</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="hero-sidebar">
+                    <div class="sidebar-articles">
+                        <article class="sidebar-article" onclick="window.location.href='articles/inflyacia-rekord.html';" style="cursor: pointer;">
+                            <div class="sidebar-image">
+                                <img src="../images/stock/iStock 1765329424.avif" alt="Экономические графики">
+                            </div>
+                            <div class="sidebar-content">
+                                <span class="category">Экономика</span>
+                                <h3>Инфляция достигла нового максимума за последние 5 лет</h3>
+                                <span class="date">2 часа назад</span>
+                            </div>
+                        </article>
+                        
+                        <article class="sidebar-article" onclick="window.location.href='articles/noviy-proryv-v-oblasti-iskusstvennogo-intellekta.html';" style="cursor: pointer;">
+                            <div class="sidebar-image">
+                                <img src="../images/stock/News Image.avif" alt="Искусственный интеллект">
+                            </div>
+                            <div class="sidebar-content">
+                                <span class="category">Технологии</span>
+                                <h3>Новый прорыв в области искусственного интеллекта</h3>
+                                <span class="date">4 часа назад</span>
+                            </div>
+                        </article>
+                        
+                        <article class="sidebar-article" onclick="window.location.href='articles/sbornaya-strany-gotovitsya-k-chempionatu-mira.html';" style="cursor: pointer;">
+                            <div class="sidebar-image">
+                                <img src="../images/stock/Reading Festival 2024 by Luke Dyson.avif" alt="Спортивное событие">
+                            </div>
+                            <div class="sidebar-content">
+                                <span class="category">Спорт</span>
+                                <h3>Сборная страны готовится к чемпионату мира</h3>
+                                <span class="date">6 часов назад</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Top Stories -->
+            <section class="top-stories">
+                <h2 class="section-title">Главные новости</h2>
+                <section class="main-stories">
+                    <div class="story-card" onclick="window.location.href='articles/zdravoohranenie-reforma.html';" style="cursor: pointer;">
+                        <div class="story-image">
+                            <img src="../images/stock/Starmer PMQs.avif" alt="Политические дебаты">
+                        </div>
+                        <div class="story-content">
+                            <span class="category">Политика</span>
+                            <h3>Премьер-министр объявил о крупных реформах в системе здравоохранения</h3>
+                            <p>Правительство объявило о масштабной реформе системы здравоохранения, направленной на улучшение качества медицинских услуг.</p>
+                            <span class="date">2 часа назад</span>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card" onclick="window.location.href='articles/noviy-proryv-v-oblasti-iskusstvennogo-intellekta.html';" style="cursor: pointer;">
+                        <div class="story-image">
+                            <img src="../images/stock/News Image.avif" alt="Искусственный интеллект">
+                        </div>
+                        <div class="story-content">
+                            <span class="category">Технологии</span>
+                            <h3>Новый прорыв в области искусственного интеллекта</h3>
+                            <p>Ученые представили революционную модель ИИ, способную обучаться новым задачам в разы быстрее существующих аналогов.</p>
+                            <span class="date">4 часа назад</span>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card" onclick="window.location.href='articles/sbornaya-strany-gotovitsya-k-chempionatu-mira.html';" style="cursor: pointer;">
+                        <div class="story-image">
+                            <img src="../images/stock/Reading Festival 2024 by Luke Dyson.avif" alt="Сборная по футболу">
+                        </div>
+                        <div class="story-content">
+                            <span class="category">Спорт</span>
+                            <h3>Сборная страны готовится к чемпионату мира</h3>
+                            <p>Национальная сборная по футболу начала интенсивную подготовку к предстоящему чемпионату мира.</p>
+                            <span class="date">6 часов назад</span>
+                        </div>
+                    </div>
+                </section>
+                <div class="stories-grid">
+                    <article class="story-card" onclick="window.location.href='articles/mezhdunarodnyy-sammit-po-klimatu.html';" style="cursor: pointer;">
+                        <div class="story-image">
+                            <img src="../images/stock/SEI 259131270.avif" alt="Климатический саммит">
+                        </div>
+                        <div class="story-content">
+                            <span class="category">Мир</span>
+                            <h3>Международный саммит по климату принял важные решения</h3>
+                            <p>Лидеры стран договорились о новых мерах по борьбе с изменением климата...</p>
+                            <div class="story-meta">
+                                <span class="author">Михаил Иванов</span>
+                                <span class="date">1 час назад</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="story-card" onclick="window.location.href='articles/uchenye-otkryli-novyy-metod-lecheniya-raka.html';" style="cursor: pointer;">
+                        <div class="story-image">
+                            <img src="../images/stock/Harriet Haynes.avif" alt="Научное исследование">
+                        </div>
+                        <div class="story-content">
+                            <span class="category">Наука</span>
+                            <h3>Ученые открыли новый метод лечения рака</h3>
+                            <p>Революционная терапия показала высокую эффективность в клинических испытаниях...</p>
+                            <div class="story-meta">
+                                <span class="author">Елена Сидорова</span>
+                                <span class="date">3 часа назад</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="story-card" onclick="window.location.href='articles/novyy-film-rossiyskogo-rezhissera-poluchil-priznanie.html';" style="cursor: pointer;">
+                        <div class="story-image">
+                            <img src="../images/stock/News from The Independent.avif" alt="Кинофестиваль">
+                        </div>
+                        <div class="story-content">
+                            <span class="category">Культура</span>
+                            <h3>Новый фильм российского режиссера получил международное признание</h3>
+                            <p>Картина была высоко оценена критиками на Каннском кинофестивале...</p>
+                            <div class="story-meta">
+                                <span class="author">Дмитрий Козлов</span>
+                                <span class="date">5 часов назад</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="story-card" onclick="window.location.href='articles/krupneyshaya-it-kompaniya-obyavila-o-novyh-investiciyah.html';" style="cursor: pointer;">
+                        <div class="story-image">
+                            <img src="../images/stock/Independent News Headlines.avif" alt="Бизнес и технологии">
+                        </div>
+                        <div class="story-content">
+                            <span class="category">Бизнес</span>
+                            <h3>Крупнейшая IT-компания объявила о новых инвестициях</h3>
+                            <p>Планируется создание тысяч новых рабочих мест в сфере технологий...</p>
+                            <div class="story-meta">
+                                <span class="author">Ольга Морозова</span>
+                                <span class="date">7 часов назад</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <h2 class="section-title">Особые материалы</h2>
+                <div class="features-grid">
+                    <article class="feature-card large" onclick="window.location.href='articles/kak-izmenilas-zhizn-posle-pandemii.html';" style="cursor: pointer;">
+                        <div class="feature-image">
+                            <img src="../images/stock/Screenshot Jul 16 2025 from The Independent.avif" alt="Люди в масках">
+                        </div>
+                        <div class="feature-content">
+                            <span class="category">Расследование</span>
+                            <h3>Как изменилась жизнь людей после пандемии: большое исследование</h3>
+                            <p>Подробный анализ социальных и экономических последствий пандемии на основе опроса тысяч респондентов...</p>
+                            <div class="feature-meta">
+                                <span class="author">Команда расследователей</span>
+                                <span class="read-time">15 мин чтения</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <div class="feature-sidebar">
+                        <article class="feature-card small" onclick="window.location.href='articles/eksklyuzivnoe-intervyu-s-laureatom-nobelevskoy-premii.html';" style="cursor: pointer;">
+                            <div class="feature-image">
+                                <img src="../images/stock/Three Person Baby.avif" alt="Лауреат Нобелевской премии">
+                            </div>
+                            <div class="feature-content">
+                                <span class="category">Интервью</span>
+                                <h3>Эксклюзивное интервью с лауреатом Нобелевской премии</h3>
+                                <div class="feature-meta">
+                                    <span class="read-time">8 мин</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="feature-card small" onclick="window.location.href='articles/budushchee-energetiki-perehod-k-vozobnovlyaemym-istochnikam.html';" style="cursor: pointer;">
+                            <div class="feature-image">
+                                <img src="../images/stock/boom_izrail.jpg" alt="Возобновляемая энергия">
+                            </div>
+                            <div class="feature-content">
+                                <span class="category">Аналитика</span>
+                                <h3>Будущее энергетики: переход к возобновляемым источникам</h3>
+                                <div class="feature-meta">
+                                    <span class="read-time">12 мин</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Opinion Section -->
+            <section class="opinion-section">
+                <h2 class="section-title">Мнения</h2>
+                <div class="opinion-grid">
+                    <article class="opinion-card" onclick="window.location.href='articles/pochemu-novye-reformy-mogut-izmenit-politicheskiy-landshaft.html';" style="cursor: pointer;">
+                        <div class="opinion-author">
+                            <img src="../images/authors/0.jpg" alt="Александр Петров">
+                            <div class="author-info">
+                                <h4>Александр Петров</h4>
+                                <span>Политический обозреватель</span>
+                            </div>
+                        </div>
+                        <h3>Почему новые реформы могут изменить политический ландшафт</h3>
+                        <p>Анализ последних политических изменений и их влияние на будущее страны...</p>
+                    </article>
+                    
+                    <article class="opinion-card" onclick="window.location.href='articles/inflyaciya-i-ee-vliyanie-na-povsednevnuyu-zhizn-grazhdan.html';" style="cursor: pointer;">
+                        <div class="opinion-author">
+                            <img src="../images/authors/1.jpg" alt="Мария Волкова">
+                            <div class="author-info">
+                                <h4>Мария Волкова</h4>
+                                <span>Экономический аналитик</span>
+                            </div>
+                        </div>
+                        <h3>Инфляция и ее влияние на повседневную жизнь граждан</h3>
+                        <p>Подробный разбор экономической ситуации и прогнозы на ближайшее будущее...</p>
+                    </article>
+                    
+                    <article class="opinion-card" onclick="window.location.href='articles/iskusstvennyy-intellekt-vozmozhnosti-i-riski.html';" style="cursor: pointer;">
+                        <div class="opinion-author">
+                            <img src="../images/authors/2.jpg" alt="Сергей Новиков">
+                            <div class="author-info">
+                                <h4>Сергей Новиков</h4>
+                                <span>Технологический эксперт</span>
+                            </div>
+                        </div>
+                        <h3>Искусственный интеллект: возможности и риски</h3>
+                        <p>Взгляд эксперта на развитие ИИ и его влияние на различные сферы жизни...</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Правда.ру</h3>
+                    <p>Независимые новости и аналитика для современного читателя</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="politika.html">Политика</a></li>
+                        <li><a href="mir.html">Мир</a></li>
+                        <li><a href="sport.html">Спорт</a></li>
+                        <li><a href="kultura.html">Культура</a></li>
+                        <li><a href="tehnologii.html">Технологии</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="o-nas.html">О нас</a></li>
+                        <li><a href="kontakty.html">Контакты</a></li>
+                        <li><a href="reklama.html">Реклама</a></li>
+                        <li><a href="vakansii.html">Вакансии</a></li>
+                        <li><a href="pomoshch.html">Помощь</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Подписка</h4>
+                    <p>Получайте последние новости на email</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Ваш email">
+                        <button>Подписаться</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Правда.ру. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="politika-konfidentsialnosti.html">Политика конфиденциальности</a>
+                    <a href="usloviya-ispolzovaniya.html">Условия использования</a>
+                    <a href="cookies.html">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Policy Popups -->
+    <div id="privacy-policy-popup" class="policy-popup">
+        <div class="policy-container">
+            <button class="close-policy">&times;</button>
+            <h3>Политика конфиденциальности</h3>
+            <div class="policy-content">
+                <p>Настоящая Политика конфиденциальности регулирует порядок обработки и использования персональных данных пользователей сайта.</p>
+                <p>1. Сбор информации: Мы собираем информацию, которую вы предоставляете при регистрации, подписке или использовании нашего сайта.</p>
+                <p>2. Использование информации: Ваши данные используются для предоставления услуг, улучшения работы сайта и коммуникации с вами.</p>
+                <p>3. Защита данных: Мы принимаем меры для защиты вашей персональной информации от несанкционированного доступа.</p>
+                <p>4. Файлы cookies: Сайт использует файлы cookies для улучшения работы и аналитики.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-policy-popup" class="policy-popup">
+        <div class="policy-container">
+            <button class="close-policy">&times;</button>
+            <h3>Условия использования</h3>
+            <div class="policy-content">
+                <p>Используя наш сайт, вы соглашаетесь с настоящими Условиями использования.</p>
+                <p>1. Интеллектуальная собственность: Все материалы сайта защищены авторским правом.</p>
+                <p>2. Ограничение ответственности: Мы не несем ответственности за точность, полноту или полезность информации на сайте.</p>
+                <p>3. Изменения условий: Мы оставляем за собой право вносить изменения в настоящие Условия в любое время.</p>
+                <p>4. Запрещенные действия: Запрещено использовать сайт для незаконных целей или нарушать права третьих лиц.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookies-policy-popup" class="policy-popup">
+        <div class="policy-container">
+            <button class="close-policy">&times;</button>
+            <h3>Использование Cookies</h3>
+            <div class="policy-content">
+                <p>Наш сайт использует файлы cookie для улучшения вашего опыта.</p>
+                <p>1. Что такое cookies? Это небольшие текстовые файлы, которые сохраняются на вашем устройстве.</p>
+                <p>2. Какие cookies мы используем: технические, аналитические, функциональные и рекламные.</p>
+                <p>3. Управление cookies: Вы можете настроить браузер для отказа от приема файлов cookie.</p>
+                <p>4. Отключение cookies может повлиять на функциональность сайта.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>%PAGE_TITLE% | Independent Clone</title>
+    <meta name="description" content="%PAGE_DESCRIPTION%">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="color-scheme" content="light">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="date-time">
+                        <span id="current-date"></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <a href="../pages/index.html" class="logo">
+                        <h1>Правда.ру</h1>
+                        <span>новости</span>
+                    </a>
+                    
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="../pages/index.html">Главная</a></li>
+                            <li><a href="../pages/politika.html">Политика</a></li>
+                            <li><a href="../pages/mir.html">Мир</a></li>
+                            <li><a href="../pages/sport.html">Спорт</a></li>
+                            <li><a href="../pages/kultura.html">Культура</a></li>
+                            <li><a href="../pages/tehnologii.html">Технологии</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="header-actions">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <button class="subscribe-btn">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">%PAGE_TITLE%</h1>
+            %PAGE_CONTENT%
+            
+            <!-- News Feed Section -->
+            <section class="news-container">
+                <!-- Category Navigation -->
+                <div class="news-categories">
+                    <button class="category-btn active" data-category="general">Главные новости</button>
+                    <button class="category-btn" data-category="business">Бизнес</button>
+                    <button class="category-btn" data-category="technology">Технологии</button>
+                    <button class="category-btn" data-category="sports">Спорт</button>
+                    <button class="category-btn" data-category="entertainment">Развлечения</button>
+                    <button class="category-btn" data-category="science">Наука</button>
+                    <button class="category-btn" data-category="health">Здоровье</button>
+                </div>
+                
+                <!-- News Grid will be populated by JavaScript -->
+                <div class="news-grid">
+                    <!-- News articles will be inserted here by JavaScript -->
+                </div>
+                
+                <!-- Loading Indicator -->
+                <div class="loading-indicator" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i> Загрузка новостей...
+                </div>
+                
+                <!-- Error Container -->
+                <div class="error-container" style="display: none;"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="../pages/index.html">Главная</a></li>
+                        <li><a href="../pages/politika.html">Политика</a></li>
+                        <li><a href="../pages/mir.html">Мир</a></li>
+                        <li><a href="../pages/sport.html">Спорт</a></li>
+                        <li><a href="../pages/kultura.html">Культура</a></li>
+                        <li><a href="../pages/tehnologii.html">Технологии</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="../pages/o-nas.html">О нас</a></li>
+                        <li><a href="../pages/kontakty.html">Контакты</a></li>
+                        <li><a href="../pages/reklama.html">Реклама</a></li>
+                        <li><a href="../pages/vakansii.html">Вакансии</a></li>
+                        <li><a href="../pages/pomoshch.html">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Подписаться</h3>
+                    <p>Будьте в курсе последних новостей</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="subscribe-btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Правда.ру. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/news-loader.js"></script>
+</body>
+</html>
